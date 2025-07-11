@@ -43,4 +43,26 @@ let negValue = -value
 let str1 = "hello"
 let str2 = " sandeep"
 let str3 = str1 + str2
-console.log(str3)
+// console.log(str3)
+
+// console.log("1" + 2);            //  -> 12
+// console.log(1 + "2");            //  -> 12
+// console.log("1" + 2 + 3);        //  -> 123
+// console.log(1 + 2 + "2");        //  -> 32
+
+
+// console.log(true);                // true
+// console.log(+true);              // 1
+// console.log(true+);             // error
+// console.log(+"");              //  0
+
+// prefix and postfic js
+
+let gameCounter = 100
+gameCounter++;
+console.log(gameCounter)            // 101
+
+let GameCounter = 100
+++GameCounter;
+console.log(GameCounter)            // 101
+
