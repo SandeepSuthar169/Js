@@ -34,3 +34,31 @@ let myObj = {
 const myFunction = function(){
     console.log("Sandeep Hello");
 }
+
+
+// Stack (Primitive) --------------------and -------------------- Heap (Non - Primitive).
+
+//Stack (Primitive)
+let MyGithunAccount = "SandeepSuthar167"
+let anotherAccount = MyGithunAccount
+anotherAccount = "suthar-sandeep-167"
+
+console.log(anotherAccount);
+console.log(MyGithunAccount);
+
+
+
+//--------------------------------------------
+//Heap (Non - Primitive)
+let userOne = {
+    name : "users",
+    iD : "uer123",
+    num : 1290
+}
+
+let userTwo = userOne
+
+userTwo.name = "sandeep123"
+
+console.log(userOne.name);
+console.log(userTwo.name);
