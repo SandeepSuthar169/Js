@@ -68,4 +68,60 @@ function logingUserMessages(usernames) {
     }
     return `${usernames} just logged in`
 }
-console.log(logingUserMessages("sandeep"));
+// console.log(logingUserMessages("sandeep"));
+
+
+
+// --------------------------------------------------------------------------------
+
+
+function cartCalutePrice(...num1) {     // ... rest operator
+        return num1
+}
+
+// console.log(cartCalutePrice(200, 500, 100, 500));            //  [ 200, 500, 100, 500 ]
+
+
+
+//  ----------------------------------------------------------------------------------
+
+function cartCalutePrice(val1, val2, ...num1) {     // ... rest operator
+        return num1
+}
+
+// console.log(cartCalutePrice(200, 500, 100, 500));                // [ 100, 500 ]
+
+
+// -----------------------------------------------------------------------------------
+
+const user = {
+    userName: "sandeep",
+    age: 34
+}
+function handleUser(anyUsers){
+    console.log(`User name is ${anyUsers.userName} and age is ${anyUsers.age}`)
+}
+
+// handleUser(user)                                                    // User name is sandeep and age is 34
+
+
+// ---------------------------------
+
+handleUser({
+    username: "sam",
+    age: 21                                       // User name is undefined and age is 21
+})
+
+
+// --------------------------------------------------------------------------------
+
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondUser(getArray){
+    return getArray[1]
+}
+console.log(returnSecondUser(myNewArray));                 // 400
+
+
+
