@@ -45,6 +45,10 @@ const obj3 = {...objs1, ...objs2, ...objs3}            // { '1': 'a', '2': 'b', 
 
 
 // -------------------------------------------------------------------------------------------
+
+
+
+
 const user = [
     {
         id: 1,
@@ -64,10 +68,44 @@ const user = [
     }
 ]
 user[1].email
-console.log(tinderUser)
-console.log(Object.keys(tinderUser));                // [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser));              //  [ '123asd', 'Pinter', false ]
-console.log(Object.entries(tinderUser));             // [ [ 'id', '123asd' ], [ 'name', 'Pinter' ], [ 'isLoggedIn', false ] ]
+// console.log(tinderUser)
+// console.log(Object.keys(tinderUser));                // [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser));              //  [ '123asd', 'Pinter', false ]
+// console.log(Object.entries(tinderUser));             // [ [ 'id', '123asd' ], [ 'name', 'Pinter' ], [ 'isLoggedIn', false ] ]
 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));     // true
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));     // true
+
+
+
+// Object destructured ------------------------------------------------------------
+
+
+const course = {
+    coursename: "asd dfgg",
+    price: "3984954",
+    instructor: "sandeep"
+}
+
+// course.instructor
+
+const {instructor: inst} = course
+
+// console.log(instructor);           // sandeep
+console.log(inst);           // sandeep
+
+
+// API  ------------------------------------------------------------------------------
+
+// {
+//     "name": "sadeep",
+//     "age": 32,
+//     "prince": 0
+// }
+
+
+[
+    {},
+    {},
+    {},
+]
