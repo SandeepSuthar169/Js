@@ -41,16 +41,17 @@ one()
 // }
 // // console.log(usernae);
 
-console.log(addone(4))
+console.log(addone(4))        // 5
 
 function addone(num) {
     return num + 1
 }
 
+//-----------------------------------------------------
 console.log(addTwo(4));
 
 const calculate = function addTwo(num) {
     return num + 2
 }
 
-console.log(calculate)
+console.log(calculate)            // error
