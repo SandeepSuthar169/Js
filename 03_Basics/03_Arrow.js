@@ -1,4 +1,4 @@
-const user = {         // ------------------IMP
+const user = {                          // ------------------IMP
     username: "sandeep",
     age: 20,
 
