@@ -90,3 +90,9 @@ MyConcertedArray
 MyConcertedArray.forEach(function (li) {
     li.style.color = "blue"
 })
+
+
+// -----------------------------------------------------------------------------------
+
+
+
