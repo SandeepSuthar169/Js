@@ -1,4 +1,4 @@
-// Primitive
+// Primitive ------------- stack
 // 7 types :-> String, Number, Booling, null, undefined, Symbol, Bigint
 
 const score = 100
@@ -16,7 +16,7 @@ console.log(id === anotherId);   // false
 const bigNumber = 934759374592875n
 
 
-//*---------------------------------------------------*
+//---------------------------------------------------*
 
 // Reference [ Non Primitice]
 // Array, Object, Functions
