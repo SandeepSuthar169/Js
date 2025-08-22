@@ -48,7 +48,7 @@ promisThree.then(function(user){
 //-------------------------------------------------------------
 const promisFour = new Promise(function(resolve, reject){
     setTimeout(function(){
-        let error = false
+        let error = false  // true
         if (!error) {
             resolve({userName: 'sanker', password: '57842'})
         } else{
