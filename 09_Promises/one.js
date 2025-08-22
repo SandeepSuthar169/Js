@@ -54,7 +54,7 @@ const promisFour = new Promise(function(resolve, reject){
         } else{
             reject('EROR: Something went wrong in files')
         }
-    }, 2 * 1000)
+    }, 1 * 1000)
 })
 
 promisFour
@@ -78,3 +78,51 @@ promisFour
 
 
 // -------------------------------------------------------------
+const promiseFive = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error = false // true
+        if(!error){
+            resolve({userName: "Javascript", userPro: "Full-Stack-Dev"})
+        } else {
+            reject('ERROR: Js went wrong')
+        }
+    }, 1 * 1000)
+})
+
+async function consumePromiseFive(){
+    try{
+        const response =  await promiseFive
+        console.log(response);
+    } catch (error){
+        console.log(error);
+    }
+}
+
+consumePromiseFive()
+
+
+
+
+
+
+
+//----------------------------------------------------------------    IMP
+// async function getAllUser(){
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.log("Error", error);   
+//     }
+// }
+
+// getAllUser()
+
+//  ++++++++++++++++++++ useing to .them(), .catch(), .finally()  ++++++++++++++    IMP
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => { return response.json() })
+.then((data) => {console.log(data);})
+.catch((error) => {console.log(error);})
+.finally(() => {console.log('the promise is either resolved data or rejected data (through error)');})
