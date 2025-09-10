@@ -1,40 +1,57 @@
-const user1 = {
-    userName: "sandeep",
-    loginCount: 7,
-    sigedIn: true, 
+// OOPs
+
+//object -> collection of properties and methods
+
+//types of OOps
+//     \-> Abstraction, Encapsulation, Inheritance, Polymorphism 
+
+//       \-> Objecy literal
+//            \-> COnstructor function, Protitypes, Classes, Intances (new, this)
+
+
+
+//------------------------------------------------------------
+
+const user = {
+    username: "sandeep",
+    loginCount: 1,
+    logIn: true,
 
     getUserDatails: function(){
-        // console.log('jskdf');
-        // console.log(`userName: ${this.userName}`);
-        // console.log(this);    // this  ->  curent context => [ data of user1 ]
+        console.log("skjdfksruhvnsjvn");
+        console.log(this);
         
     }
 }
 
-// console.log(user1.userName);
+// console.log(user["username"]);
+// console.log(user.username);
 // console.log(user.getUserDatails());
-// console.log(this);   // --- > {} emthy
+// console.log(this);
 
-//-----------------------------------------------------------------------------
 
-function user2(username, loginCont, isSingedIN){
+//--------------------------------------------------------------
+
+// const promiseOne = new Promise()
+const data = new Date(0)
+// console.log(data);
+
+
+function User(username, loginCount, isLoggedIn){
     this.username = username,
-    this.loginCont = loginCont,
-    this.isSingedIN = isSingedIN
+    this.loginCount = loginCount,
+    this.isLoggedIn = isLoggedIn
 
-    this.greeting = function(){
-        console.log(`welcome ${this.username}`);
+    this.sampleFunction = function(){
+        console.log(this.loginCount);
         
     }
-
-
 
     return this
 }
 
-const userOne = new user2('sandeep', 3, false)
-const usertwo = new user2('suthar', 0, true)
-console.log(userOne.constructor());    
-
-// console.log(userOne);
-// console.log(usertwo);
+const userOne = new User("sandeep", 45, false)
+const usertwo = new User("vj", 85, true)
+console.log(userOne);
+console.log(usertwo);
+console.log(userOne.constructor);
