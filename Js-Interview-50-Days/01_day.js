@@ -84,4 +84,22 @@ const sortAscendings = (arr) => {
 }
     
 
-console.log(sortAscendings([4, 3, 7, 6, 10]));
+// console.log(sortAscendings([4, 3, 7, 6, 10]));
+
+//6 ----------------------------------------------------------------------------------
+const isPalindrome = function(str){
+    str = str.toLowerCase().replace(/\s+/g, "")
+    console.log(str);
+    
+    let strs = str.split("").reverse().join("")
+    console.log(strs);
+
+    if(str === strs){
+        return true
+    } else {
+        return false
+    }
+    
+}
+
+console.log(isPalindrome("A man12 a plan aq canal"));
