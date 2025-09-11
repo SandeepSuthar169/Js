@@ -103,3 +103,6 @@ const isPalindrome = function(str){
 }
 
 console.log(isPalindrome("A man12 a plan aq canal"));
+
+
+//7 ----------------------------------------------------------------------------------
