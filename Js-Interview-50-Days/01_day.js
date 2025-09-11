@@ -102,7 +102,14 @@ const isPalindrome = function(str){
     
 }
 
-console.log(isPalindrome("A man12 a plan aq canal"));
+// console.log(isPalindrome("A man12 a plan aq canal"));
 
 
 //7 ----------------------------------------------------------------------------------
+
+const maxNumber = (array) => {
+    return Math.max(...array)
+}
+
+console.log(maxNumber([1, -4, 893, 0, -1, 199, -999]));
+
