@@ -105,11 +105,44 @@ const isPalindrome = function(str){
 // console.log(isPalindrome("A man12 a plan aq canal"));
 
 
-//7 ----------------------------------------------------------------------------------
 
+
+//7 ----------------------------------------------------------------------------------
 const maxNumber = (array) => {
     return Math.max(...array)
 }
 
-console.log(maxNumber([1, -4, 893, 0, -1, 199, -999]));
+// console.log(maxNumber([1, -4, 893, 0, -1, 199, -999]));
 
+
+
+
+
+// 8 ----------------------------------------------------------------------------------
+
+const factorial = (num) => {
+    let fact = 1
+    for(let i = 1; i<= num; i++){
+        // console.log(i);
+        fact = fact * i
+    }
+    return fact
+}
+
+// console.log(factorial(5));
+
+
+
+
+//9 ----------------------------------------------------------------------------------
+const calculateAverage = (array) => {
+    console.log(array.length);
+    
+    const a = array.reduce((accumulator, currentValue) => accumulator + currentValue )
+    return a / array.length
+}
+
+
+console.log(calculateAverage([5, 10, 2, 8]))
+
+// 10 ----------------------------------------------------------------------------------
