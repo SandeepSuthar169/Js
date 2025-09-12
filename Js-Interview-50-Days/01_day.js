@@ -143,6 +143,21 @@ const calculateAverage = (array) => {
 }
 
 
-console.log(calculateAverage([5, 10, 2, 8]))
+// console.log(calculateAverage([5, 10, 2, 8]))
+
+
+
 
 // 10 ----------------------------------------------------------------------------------
+
+const arrayAreEqual = (array1, array2) => {
+    if(array1.length !== array2.length){
+        return false
+    }
+
+    return array1.every((currentValue, index) => currentValue === array2[index])
+}
+
+console.log(arrayAreEqual([1, 2, 3], [1, 2, 3]))  // true
+console.log(arrayAreEqual([1, 2, 3], [1, 2, 4]))   // false
+console.log(arrayAreEqual([], []))   //true
