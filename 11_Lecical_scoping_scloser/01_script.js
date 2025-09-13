@@ -47,9 +47,29 @@ function createCounter(stepSize, initalValue){
     }
 }
 
-const e1 = createCounter(1, 10)
-console.log(e1());  // 11
-console.log(e1());  // 12
-console.log(e1());  // 13
-console.log(e1());  // 14
-console.log(e1());  // 15
+// const e1 = createCounter(1, 10)
+// console.log(e1());  // 11
+// console.log(e1());  // 12
+// console.log(e1());  // 13
+// console.log(e1());  // 14
+// console.log(e1());  // 15
+
+
+//-----------------------------------------------------
+
+
+function createDebouncedVersion(fun, delay){
+    let timerId  = null
+
+    return functions(){
+        clearTimeout(timerId)
+        timerId  = setTimeout(fun, delay);
+    }
+}
+
+function appliCall(){}
+
+const appliCallDown = createDebouncedVersion(appliCall, 5 * 1000)
+appliCallDown()
+
+
