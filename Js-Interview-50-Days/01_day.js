@@ -150,14 +150,27 @@ const calculateAverage = (array) => {
 
 // 10 ----------------------------------------------------------------------------------
 
-const arrayAreEqual = (array1, array2) => {
-    if(array1.length !== array2.length){
+const arrayEqul = (arr1, arr2) => {
+    if(arr1.length !== arr2.length){
         return false
     }
 
-    return array1.every((currentValue, index) => currentValue === array2[index])
+    let a  = arr1.every((currentValue, index) => currentValue === arr2[index])
+
+    return a
 }
 
-console.log(arrayAreEqual([1, 2, 3], [1, 2, 3]))  // true
-console.log(arrayAreEqual([1, 2, 3], [1, 2, 4]))   // false
-console.log(arrayAreEqual([], []))   //true
+// console.log(arrayEqul([1, 2, 3], [1, 2, 3]))   // true
+// console.log(arrayEqul([1, 2, 3], [1, 2, 4]))   // false
+// console.log(arrayEqul([], []))                 //true
+
+
+// 11 ----------------------------------------------------------------------------------
+
+const sumDigits = (arr) => {
+    let a = Array.from(String(arr), Number)
+    let b = a.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+    return b   
+}
+
+console.log(sumDigits(1234));
