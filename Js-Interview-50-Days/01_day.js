@@ -187,3 +187,26 @@ const removeBuplicated = (array) => {
 }
 
 console.log(removeBuplicated([1, 2, 3, 4, 5, 6, 7, 7]));
+
+
+
+
+// 13 ----------------------------------------------------------------------------------
+const countVowels = (str) => {
+    let vowels = ["a", "e", "i", "o", "u"]
+
+    let count = 0
+    let strs = str.toLowerCase().split("")
+    console.log(strs);
+    
+    for(let i = 0; i<strs.length; i++){
+        if(vowels.includes(strs[i])){
+            count++
+        }
+    }
+    return count
+
+    
+}
+
+console.log(countVowels("sandeep suthar"))
