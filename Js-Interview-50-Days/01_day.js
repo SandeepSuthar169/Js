@@ -173,4 +173,17 @@ const sumDigits = (arr) => {
     return b   
 }
 
-console.log(sumDigits(1234));
+// console.log(sumDigits(1234));
+
+
+
+// 12 ----------------------------------------------------------------------------------
+
+const removeBuplicated = (array) => {
+    let newArr  = array.filter((accumulator, currentValue) => 
+        array.indexOf(accumulator) === currentValue
+    )
+    return newArr
+}
+
+console.log(removeBuplicated([1, 2, 3, 4, 5, 6, 7, 7]));
