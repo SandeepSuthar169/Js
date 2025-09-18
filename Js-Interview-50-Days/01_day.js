@@ -234,5 +234,22 @@ function sunOfSquares(array){
 }
 
 
-console.log(sunOfSquares([1, 2, 3]));
+// console.log(sunOfSquares([1, 2, 3]));
+
+
+
+
+// 16 ----------------------------------------------------------------------------------
+function findMin(array){
+    return array.reduce((accumulator, currentValue) => currentValue < accumulator ? currentValue : accumulator)
+}
+
+
+
+console.log(findMin([5, 10, -2, 0, 100]));
+
+
+
+
+// 17 ----------------------------------------------------------------------------------
 
