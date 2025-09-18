@@ -148,8 +148,7 @@ const calculateAverage = (array) => {
 
 
 
-// 10 ----------------------------------------------------------------------------------
-
+// 10 ----------------------------------------------------------------------------------    
 const arrayEqul = (arr1, arr2) => {
     if(arr1.length !== arr2.length){
         return false
@@ -166,7 +165,6 @@ const arrayEqul = (arr1, arr2) => {
 
 
 // 11 ----------------------------------------------------------------------------------
-
 const sumDigits = (arr) => {
     let a = Array.from(String(arr), Number)
     let b = a.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
@@ -209,4 +207,22 @@ const countVowels = (str) => {
     
 }
 
-console.log(countVowels("sandeep suthar"))
+// console.log(countVowels("sandeep suthar"))
+
+
+
+// 14 ----------------------------------------------------------------------------------
+
+
+function isPowerOfTwO(num){
+    let values = false
+    for(let i = 1; i < num; i++){
+        if(2 ** i === num){
+            values = true
+        } 
+    }
+    return values
+}
+
+
+console.log(isPowerOfTwO(8));
