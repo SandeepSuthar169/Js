@@ -225,4 +225,14 @@ function isPowerOfTwO(num){
 }
 
 
-console.log(isPowerOfTwO(8));
+// console.log(isPowerOfTwO(8));
+
+
+// 15 ----------------------------------------------------------------------------------
+function sunOfSquares(array){
+    return array.map((n) => n** 2).reduce((accumulator, currentValue) => currentValue + accumulator)
+}
+
+
+console.log(sunOfSquares([1, 2, 3]));
+
