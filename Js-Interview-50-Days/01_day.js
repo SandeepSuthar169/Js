@@ -246,10 +246,16 @@ function findMin(array){
 
 
 
-console.log(findMin([5, 10, -2, 0, 100]));
+// console.log(findMin([5, 10, -2, 0, 100]));
 
 
 
 
 // 17 ----------------------------------------------------------------------------------
 
+function toCamelCase(string){
+    let a = string.split(" ").map((n) => n.replace(n[0], n[0].toUpperCase())).join("")
+   return a.replace(a[0], a[0].toLowerCase())
+}
+
+console.log(toCamelCase("hello world sandeep"));
