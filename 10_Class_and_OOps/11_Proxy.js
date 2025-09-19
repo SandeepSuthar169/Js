@@ -1,0 +1,59 @@
+const user = {
+    name: "sandeep",
+    age: 21,
+    password: "8192324"
+}
+
+const proxyUser = new Proxy(user, {
+    get(target, prop){
+        console.log(target);
+        console.log(prop);
+
+        if(prop === "password"){
+            throw new Error("Access Denied")
+        }
+        return target[prop]
+    },
+//---------------------------------------------
+    set(target, prop, user){
+
+    }
+
+})
+
+// console.log(proxyUser.name);
+// console.log(proxyUser.password);
+
+
+//================================================================
+//================================================================
+
+function negativeIndex(array){
+    return new Proxy(array, {
+
+        get(target, prop){
+            const index = Number(prop)
+            if(index < 0){
+                return target[target.length + index ]
+            }
+            return target[index]
+        },
+
+        set(target, prop, value){
+            const index = Number(prop)
+            if(index < 0){
+                return target[target.length + index] = value
+            } else {
+                target[index] = value
+            }
+            return true
+        }
+    })
+}
+
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let newArray = negativeIndex(array)
+
+console.log(array[-1]);
+console.log(newArray[-4]);
+
