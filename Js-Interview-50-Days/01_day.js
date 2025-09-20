@@ -87,6 +87,7 @@ const sortAscendings = (arr) => {
 // console.log(sortAscendings([4, 3, 7, 6, 10]));
 
 //6 ----------------------------------------------------------------------------------
+
 const isPalindrome = function(str){
     str = str.toLowerCase().replace(/\s+/g, "")
     console.log(str);
@@ -108,6 +109,7 @@ const isPalindrome = function(str){
 
 
 //7 ----------------------------------------------------------------------------------
+
 const maxNumber = (array) => {
     return Math.max(...array)
 }
@@ -135,6 +137,7 @@ const factorial = (num) => {
 
 
 //9 ----------------------------------------------------------------------------------
+
 const calculateAverage = (array) => {
     console.log(array.length);
     
@@ -149,6 +152,7 @@ const calculateAverage = (array) => {
 
 
 // 10 ----------------------------------------------------------------------------------    
+
 const arrayEqul = (arr1, arr2) => {
     if(arr1.length !== arr2.length){
         return false
@@ -165,6 +169,7 @@ const arrayEqul = (arr1, arr2) => {
 
 
 // 11 ----------------------------------------------------------------------------------
+
 const sumDigits = (arr) => {
     let a = Array.from(String(arr), Number)
     let b = a.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
@@ -184,12 +189,13 @@ const removeBuplicated = (array) => {
     return newArr
 }
 
-console.log(removeBuplicated([1, 2, 3, 4, 5, 6, 7, 7]));
+// console.log(removeBuplicated([1, 2, 3, 4, 5, 6, 7, 7]));
 
 
 
 
 // 13 ----------------------------------------------------------------------------------
+
 const countVowels = (str) => {
     let vowels = ["a", "e", "i", "o", "u"]
 
@@ -229,6 +235,7 @@ function isPowerOfTwO(num){
 
 
 // 15 ----------------------------------------------------------------------------------
+
 function sunOfSquares(array){
     return array.map((n) => n** 2).reduce((accumulator, currentValue) => currentValue + accumulator)
 }
@@ -240,6 +247,7 @@ function sunOfSquares(array){
 
 
 // 16 ----------------------------------------------------------------------------------
+
 function findMin(array){
     return array.reduce((accumulator, currentValue) => currentValue < accumulator ? currentValue : accumulator)
 }
@@ -258,4 +266,60 @@ function toCamelCase(string){
    return a.replace(a[0], a[0].toLowerCase())
 }
 
-console.log(toCamelCase("hello world sandeep"));
+// console.log(toCamelCase("hello world sandeep"));
+
+
+//18 ----------------------------------------------------------------------------------
+
+const CharCaseUpperLower = (char) => {
+    // if(char === char.toUpperCase()){
+    //     char = true
+    // } else {
+    //     char = false
+    // }
+    // return char
+                                // or
+                                     
+    if(char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90 ){
+        char = true
+    } else {
+        char = false
+    }
+    return char
+}
+
+
+
+// console.log(CharCaseUpperLower("r"));
+
+
+
+//19 ----------------------------------------------------------------------------------
+
+function startWith(str, str1){
+    let a = str.toLowerCase().split(" ")[0]
+    let b = str1.toLowerCase().split(" ")[0]
+
+   return a === b   // return true or false
+                                             
+                                // or 
+
+    // return str.toLowerCase().startWith(str1.toLoweCase())    // return true or false
+
+}
+
+// console.log(startWith("Hello world", "hello"));
+
+
+
+// 20 ----------------------------------------------------------------------------------
+
+function reverseString(str){
+    let a = "";
+    for(let i = str.length - 1; i >= 0; i--){
+        a = a +  str[i]
+    }
+    return a
+}
+
+console.log(reverseString("hello"));
