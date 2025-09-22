@@ -322,4 +322,38 @@ function reverseString(str){
     return a
 }
 
-console.log(reverseString("hello"));
+// console.log(reverseString("hello"));
+
+
+
+// 21 ----------------------------------------------------------------------------------
+
+function calculateMean(arr){
+    let a = arr.reduce((acc, curr) => curr + acc)
+    console.log(a / arr.length);
+    
+}
+
+// calculateMean([1, 2, 3, 4, 5, 6])
+
+
+// 22 ----------------------------------------------------------------------------------
+
+const findMedian = (array) => {
+    let newArr = array.sort((a, b) => a-b)
+    console.log(newArr);
+    let length = newArr.length
+    let a = Math.floor(length / 2);
+    
+    if(length % 2 === 1){
+        return newArr[a]
+
+    } else {
+        let sum = newArr[a -1] + newArr[a];
+        return sum / 2
+    }
+    
+}
+
+console.log(findMedian([4, 3, 8, 1, 8, 6, 9]));   //  odd
+console.log(findMedian([4, 3, 8, 1, 8, 6, 9, 12]));   // even
