@@ -391,7 +391,19 @@ function findMode(array) {
     console.log(maxVlaueWithKey);    
 }
 
-console.log(findMode([1, 2, 2, 3, 1, 4, 2]));
+// console.log(findMode([1, 2, 2, 3, 1, 4, 2]));
 
 
 
+//25 ----------------------------------------------------------------------------------
+// recursion topic question
+
+// 27 ----------------------------------------------------------------------------------
+function repeatString(str, num){
+    return num > 0 ?  str.repeat(num) : str 
+
+    
+
+}
+
+console.log(repeatString("abc", 2));
