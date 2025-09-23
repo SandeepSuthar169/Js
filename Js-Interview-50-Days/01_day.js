@@ -355,5 +355,43 @@ const findMedian = (array) => {
     
 }
 
-console.log(findMedian([4, 3, 8, 1, 8, 6, 9]));   //  odd
-console.log(findMedian([4, 3, 8, 1, 8, 6, 9, 12]));   // even
+// console.log(findMedian([4, 3, 8, 1, 8, 6, 9]));   //  odd
+// console.log(findMedian([4, 3, 8, 1, 8, 6, 9, 12]));   // even
+
+
+// 23 ----------------------------------------------------------------------------------
+
+const obj = {}
+obj['name'] = "sandeep"  // {key: 'value'}
+
+// console.log(obj);   // { name: 'sandeep' }
+// console.log(obj['name']);   // 'sandeep'
+
+
+
+const number = [1, 2, 3, 3, 9, 10, 10, 10, 1]
+let counts = {};
+
+for (let i of number){
+    counts[i] = (counts[i] || 0) + 1
+}
+// console.log(counts);
+
+
+// 24 ----------------------------------------------------------------------------------
+
+function findMode(array) {
+    let consts = {}
+    for(let i of array){
+        consts[i] = (consts[i] || 0) + 1        
+    }
+    console.log(consts);
+
+    let maxVlaueWithKey = Object.keys(consts).reduce((a, b) => consts[a] > consts[b] ? a : b)
+    console.log(maxVlaueWithKey);    
+}
+
+console.log(findMode([1, 2, 2, 3, 1, 4, 2]));
+
+
+
