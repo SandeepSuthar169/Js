@@ -402,8 +402,37 @@ function findMode(array) {
 function repeatString(str, num){
     return num > 0 ?  str.repeat(num) : str 
 
-    
-
 }
 
-console.log(repeatString("abc", 2));
+// console.log(repeatString("abc", 2));
+
+// 28 ----------------------------------------------------------------------------------
+function truncateString(str, count){
+    if(count === 0){
+        return str.concat("...")
+    } else if(str.length > count){
+        return str.slice(0, count).concat("...")
+    }
+   
+}
+
+console.log(truncateString("A-tisketr a-trasket A green and Yellow tasker", 4));
+
+
+
+// 29 ----------------------------------------------------------------------------------
+function numberRange(num1, num2){
+    let arr = []
+    for(let i = num1; i <= num2; i++){
+        console.log(num1);
+        arr.push(i)
+
+    }
+    return arr
+}
+
+
+console.log(numberRange(3, 5));
+console.log(numberRange(1, 4));
+
+
