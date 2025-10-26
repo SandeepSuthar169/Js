@@ -1,0 +1,1 @@
+{"version":3,"file":"controller.d.ts","sourceRoot":"","sources":["../../../../../src/app/router/health/controller.ts"],"names":[],"mappings":"AAAA,OAAO,KAAM,EAAC,OAAO,EAAE,QAAQ,EAAC,MAAM,SAAS,CAAA;AAG/C,cAAM,gBAAgB;IACZ,iBAAiB,CAAC,GAAG,EAAE,OAAO,EAAE,GAAG,EAAE,QAAQ;CAKtD;AAED,eAAe,gBAAgB,CAAA"}
